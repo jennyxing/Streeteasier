@@ -1,0 +1,25 @@
+{
+    "name": "Streeteasier",
+    "version": "0.0.1",
+    "description": "This extension displays the gross rent alongside the net effective rent that is often advertised on Streeteasy ",
+    "content_scripts": [
+        {
+            "matches": ["https://streeteasy.com/building/*"],
+            "js": ["util.js", "replaceNetAffectiveRent.js"],
+            "run_at": "document_idle"
+        },
+        {
+            "matches": ["https://streeteasy.com/for-rent/*"],
+            "js": ["replaceNetAffectiveRent-search.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": { "scripts": ["hot-reload.js"] },
+    "icons": {
+        "16": "images/Icon-16.png",
+        "32": "images/Icon-32.png",
+        "48": "images/Icon-48.png",
+        "128": "images/Icon-128.png"
+    },
+    "manifest_version": 2
+}

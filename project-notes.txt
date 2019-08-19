@@ -1,0 +1,84 @@
+*** To engineers looking at this, this is just my scratchpad for planning this project out. No need to read unless you're interested in my thought process ***
+
+-IDEATION
+
+promotional pricing. 
+
+"no fee"- someone is paying for a broker's services to show the apartment and put it up on the market, either the landlord or the management company. if this is not the landlord/owner, it's a broker. 
+"by owner" - the landlord/owner is renting out their unit themselves
+fake no fee- some sort of promotions
+broker's fee- one month of rent, 12-15% annual rent 
+
+"free month" 
+
+how much might i have to pay upfront?
+- first month rent
+- last month rent actually illegal: https://www.brickunderground.com/rent/difference-between-last-months-rent-and-security-deposit
+- broker's fee (sometimes a month of rent, which is 8.3%, up to 15% of the annual rent)
+- security deposit (can't exceed a month of rent)
+- application fee (might include credit check, processing etc.)
+- move in/move out fees (what the heck are these)
+- pet fees
+- moving costs
+- selling furniture
+- packing
+
+why you should find a good broker in NYC and establish a relationship:
+they'll be able to alert you of units before they hit the market
+they'll be able to help you the next time you find an apartment, and give you a discount of the fee
+brokers sometimes are friends/family of the owner/landlord, or live in the neighborhood/know the building you're looking at really well. they know the selling/rental market very well, which is knowledge you probably don't have.
+
+some neighborhoods, like carroll gardens, just don't have that many units that have "no fee".  if you're searching with this criteria, you will miss a lot of good apartments.
+"no fee" is common in high rises/pricey buildings where your "broker fee" and amenities and whatnot are basically baked into your rent. 
+
+DESIGN
+
+two views on streeeasy, one of search results (a list of apartments), and one of the listing itself. These are the main two places where you see the apartment's month rent price.
+I want to display the gross monthly price if the price i see is actuallt net effective
+
+promotional price info is only show on the listing page, not on the search results page. I want to change that.
+
+how much are you actually paying, PER MONTH?
+how much will you be paying, ANNUALLY (THAT'S 12 MONTHS)
+how much will you be paying, ANNUALLY, plus broker's fees? and how much does that come down per month?
+
+key numbers:
+"gross rent" - the rent that you'll be paying per month to the landlord. this is the same each month! this is what appears on the lease. 
+    some listings tell you what the gross rent is in the listing description
+"net effective rent" - an average month rent after all the promotions and month free. this usually comes out to be lower than what you might pay every month, and is used as an advertising tactic!
+    this is the number you will see advertised. 
+lease length- how long are you signing the lease for? 1 year is very common.
+
+sometimes, rent might include utilities. factor in gas, heating, electricity, and internet, which can add up to more than $100/ month! 
+"broker's fee" 
+"annual rent (12 months) + broker's fee"
+"utilities"
+
+THE MATH (ugh):
+
+some examples of language on listings, and what they mean:
+"$3981/month is net effective and gross rent is $4550, 3 months free on 24 month lease). (you are paying $4550 for 21 months, and get 3 months free)
+"$7,791/month is net effective with one month free on an 12 month lease" (this means you are paying $8500 a month for 11 months, and you get a month free)
+"$5454 net effective, gross is $5950, 12 month one month free" (you pay $5950 for 11 months and get 1 month free)
+"$9231 net effective, gross is $10000, 13 month lease with 1 month free" 
+
+PROGRAM
+
+if this is a "no fee" apartment
+
+if this apartment has a fee:
+    we know there are no shenangans on the monthly rent (aka that is how much you will be billed per month)
+    figure out the broker's fee
+        what is the gross rent (the broker's fee is usually based on this rather than net effective?
+        is the broker's fee a month of rent, or a percentage of the annual rent?
+        if is percentage of annual rent, multiply monthly rent by 12 (assuming lease is for 12 months) and then calculate accordingly
+    ** display the broker's fee somewhere! **
+    and now, to calculate how much you may be spending the entire year
+    add broker's fee to the annual rent
+
+
+to do in future - use some fancy NLP stuff to read the descriptions and find out what it says about net effective, free months, etc. 
+    
+
+
+
