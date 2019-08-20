@@ -1,3 +1,5 @@
+// taken from https://60devs.com/hot-reloading-for-chrome-extensions.html?source=post_page-----3da296916286----------------------
+
 const filesInDirectory = dir => new Promise (resolve =>
 
     dir.createReader ().readEntries (entries =>
