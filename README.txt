@@ -36,13 +36,12 @@ What I learned so far on this project:
 
 //TODO:
 - BUGS:
-    - the gross rent being calculated is
+    - the gross rent being calculated is based on assumptions of the lease length and months free
 - FEATURES:
     - show the gross rent on the rental search results page too (see replaceNetEffectiveRent-search.js)
     - improve design to make it consistent/less invasive on Streeteasy
     - use NLP to parse the description of the listing to better understand the promotional language
     - make sure the script doesn't run on listings that are already listing the gross rent
-- TESTING:
 - OTHER: 
     - improve clarity of code
     - improve performance - we want the DOM manipulation to be as smooth as possible
